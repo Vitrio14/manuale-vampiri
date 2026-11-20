@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuale Vampiri | Horde RP V5</title>
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Logo Horde RP" class="logo-img" onerror="this.style.display='none'">
+            <h1>Horde RP V5 | MANUALE</h1>
+        </div>
+
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a class="nav-link active" data-section="home">Home</a>
+            <a class="nav-link" data-section="damnatio">Damnatio Memoriae</a>
+            <a class="nav-link" data-section="trasformazione">Trasformazione</a>
+            <a class="nav-link" data-section="linee">Linee Guida</a>
+            <a class="nav-link" data-section="lessico">Lessico</a>
+            <a class="nav-link" data-section="storia">Storia</a>
+            <a class="nav-link" data-section="rituale">Rituale Ospiti</a>
+            <a class="nav-link" href="https://docs.google.com/document/d/1-0kgvTtXHAmbzzMrlTYVQuMX9Uc-CQy7B6gm6cL5-98/edit?tab=t.0" target="_blank" rel="noopener">Manuale Completo ↗</a>
+        </div>
+
+        <div class="nav-logout"></div>
+    </nav>
+
+    <main class="container">
+        <!-- ==================== HOME ==================== -->
+        <section id="home" class="section active">
+            <div class="vamp-card" style="text-align:center;">
+                <h2>Manuale Vampiri</h2>
+                <p style="font-size:1.05rem; color:var(--text-light); max-width:720px; margin:0 auto 1.5rem; line-height:1.7;">
+                    Benvenuti nel Santuario delle Ombre.<br>
+                    Qui sono raccolte le leggi, le tradizioni e la memoria della Stirpe.<br>
+                </p>
+                <div class="stats-grid" style="margin-top:2rem;">
+                    <div class="stat-card" style="cursor:pointer;" onclick="showSection('damnatio')">
+                        <h3>Il Patto</h3>
+                        <p style="font-size:1rem;">Damnatio Memoriae</p>
+                    </div>
+                    <div class="stat-card" style="cursor:pointer;" onclick="showSection('trasformazione')">
+                        <h3>Il Percorso</h3>
+                        <p style="font-size:1rem;">Trasformazione</p>
+                    </div>
+                    <div class="stat-card" style="cursor:pointer;" onclick="showSection('linee')">
+                        <h3>Le Regole</h3>
+                        <p style="font-size:1rem;">Linee Guida</p>
+                    </div>
+                    <div class="stat-card" style="cursor:pointer;" onclick="showSection('lessico')">
+                        <h3>Le Parole</h3>
+                        <p style="font-size:1rem;">Lessico</p>
+                    </div>
+                    <div class="stat-card" style="cursor:pointer;" onclick="showSection('storia')">
+                        <h3>Le Origini</h3>
+                        <p style="font-size:1rem;">Storia</p>
+                    </div>
+                    <div class="stat-card" style="cursor:pointer;" onclick="showSection('rituale')">
+                        <h3>Il Rituale</h3>
+                        <p style="font-size:1rem;">Ospiti</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DAMNATIO MEMORIAE ==================== -->
+        <section id="damnatio" class="section">
+            <div class="vamp-card">
+                <h2>Damnatio Memoriae</h2>
+                <p style="margin-bottom:1.5rem; color:var(--text-dim); font-size:0.9rem;">
+                    Il codice sacro della Stirpe. Protegge l’identità, il sangue e l’ombra.
+                </p>
+
+                <div style="text-align:center; margin-bottom:2.5rem;">
+                    <img src="assets/damnatio.png" alt="Damnatio Memoriae" 
+                         style="max-width:100%; width:min(640px,100%); border-radius:8px; 
+                                border:1px solid rgba(197,160,89,0.35); 
+                                box-shadow:0 12px 40px rgba(0,0,0,0.7), 0 0 30px rgba(139,0,0,0.25);">
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">L’Occultamento</h3>
+                    <p>Il vampiro cela la propria natura. Agli umani e alle altre creature non sarà rivelata l’esistenza della stirpe, né la propria appartenenza ad essa.</p>
+                    <p>Il vampiro proteggerà la propria identità, quella dei suoi fratelli e ogni segreto della propria Dinastia.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Il Segreto</h3>
+                    <p>Le origini, i riti, i poteri, le debolezze e i segreti della stirpe appartengono al Sangue.</p>
+                    <p>Ciò che appartiene al Sangue non sarà rivelato a chi ne è estraneo.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Il Consenso</h3>
+                    <p>Fuori dalla Cittadella, il vampiro può nutrirsi di un umano solo e indifeso senza il suo consenso, purché il morso non lasci memoria né riveli la natura del vampiro.</p>
+                    <p>Nella Cittadella, il consenso è legge. Nessun Sangue sarà preso senza essere offerto.</p>
+                    <p>Ovunque dimori, il vampiro manterrà celata la propria natura.<br>
+                    La fame, la rabbia, il desiderio o la vendetta non saranno giustificazione alla violazione del Damnatio Memoriae.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">La Conseguenza</h3>
+                    <p>Chi infrange il Patto risponderà delle proprie azioni.<br>
+                    Ogni violazione sarà giudicata secondo la gravità dell’atto, del danno arrecato e del pericolo posto alla dinastia.</p>
+                    <p>Nessun vampiro è al di sopra della Legge.</p>
+                </div>
+
+                <div class="doc-closing">
+                    <p><strong>Questo è il Patto.</strong></p>
+                    <p><strong>Questo è il dovere del Sangue.</strong></p>
+                    <p><strong>Questo è il prezzo dell’Ombra.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TRASFORMAZIONE ==================== -->
+        <section id="trasformazione" class="section">
+            <div class="vamp-card">
+                <h2>Gestione della Trasformazione</h2>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Periodo da Neonato <span class="badge-obbligatorio">OBBLIGATORIO DA RUOLARE</span></h3>
+                    <p>Per la durata di <strong>5 giorni</strong>, il vampiro si troverà in una condizione di grave debolezza dovuta al disperato bisogno di sangue umano. In questa fase presenterà riflessi e sensi ridotti; l’olfatto, così come tutti gli altri sensi, inizierà a svilupparsi causandogli un fastidio e un sovraccarico sensoriale persistente. La sete di sangue sarà incessante.</p>
+                    <p>I mentori e gli adulti potranno preservarlo da scelte irrazionali e nei primi 5 giorni le parole dei mentori e degli adulti suonano nella sua testa come <strong>legge gerarchica assoluta</strong>.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Periodo di Crescita</h3>
+                    <p>I sensi e l’olfatto continuano a svilupparsi e i fastidi iniziano gradualmente a placarsi. La sete di sangue rimarrà sempre presente, ma si presenterà in forma più alleviata e gestibile.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Transizione ad Adulto</h3>
+                    <p>In questo periodo il vampiro sarà in grado di controllare appieno i propri sensi e imparerà a gestire gli stimoli della sete, acquisendo in generale un maggiore autocontrollo. Potrà interfacciarsi e avere consigli dai mentori che lo guideranno.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Passaggio da Adulto a Mentore</h3>
+                    <p>Il “Mentore” diventerà la guida di riferimento per i neonati e per gli adulti. Per i neonati si vedrà nelle vesti di “padre” o “madre” soprattutto per i primi 5 giorni di novizio: cercherà di preservarlo e indicargli la giusta via per essere un vampiro. Al termine di questi giorni, e anche per gli adulti, rimarrà una figura principale ma <strong>non si assumerà nessun tipo di responsabilità</strong> legata alle decisioni individuali degli altri.</p>
+                </div>
+
+                <h2 style="margin-top:2.5rem;">Progenie e Responsabilità della Dinastia</h2>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Requisiti per la Procreazione</h3>
+                    <ul class="doc-list">
+                        <li><strong>Idoneità degli Adulti e Mentori:</strong> Potranno generare figli o figlie solo gli ADULTI con esperienza — MENTORI che dimostreranno di essere responsabili e pienamente adatti a ricoprire questo ruolo all’interno della comunità.</li>
+                        <li><strong>Assegnazione della Trasformazione:</strong> Sarà compito esclusivo degli Adulti e Mentori valutare e giudicare le proprie competenze e le responsabilità che derivano dall’atto della trasformazione. Decideranno autonomamente, all’interno del proprio consiglio, chi si sente pronto e chi sia il più adatto a trasformare l’umano in un determinato momento.</li>
+                    </ul>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Status dell’Umano e della Progenie</h3>
+                    <ul class="doc-list">
+                        <li><strong>Scelta del Morso:</strong> L’umano non potrà scegliere da quale vampiro verrà morso e trasformato. Questa regola serve a evitare preferenze personali o dinamiche di favoritismo all’interno del gioco.</li>
+                        <li><strong>Libertà del Neonato:</strong> Una volta superata la fase iniziale, il vampiro appena nato avrà la possibilità, più avanti nel suo percorso, di scegliere liberamente se accettare il proprio nucleo familiare o se distaccarsi definitivamente da esso.</li>
+                    </ul>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Responsabilità</h3>
+                    <ul class="doc-list">
+                        <li><strong>Tutela nel Periodo da Neonato:</strong> Durante tutto il periodo da neonato, l’Adulto o Mentore (nonché genitore biologico del nuovo vampiro) avrà l’obbligo morale di assumersi la responsabilità delle azioni del proprio protetto.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LINEE GUIDA ==================== -->
+        <section id="linee" class="section">
+            <div class="vamp-card">
+                <h2>Linee Guida e Comportamento</h2>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Effetto del Sangue tra Vampiri</h3>
+                    <div class="blood-effect">
+                        <div class="blood-card">
+                            <span class="blood-rank">Ekaton</span>
+                            <p>Il sangue di Ekaton, così come la sua presenza, calmerà istantaneamente qualsiasi voglia di nutrirsi e qualsiasi stato di agitazione, rendendo il vampiro calmo e tranquillo.</p>
+                            <span class="blood-dur">Durata: Molto prolungata</span>
+                        </div>
+                        <div class="blood-card">
+                            <span class="blood-rank">Mentore</span>
+                            <p>Il sangue di Mentore calmerà in modo rapido qualsiasi voglia di nutrirsi e qualsiasi stato di agitazione.</p>
+                            <span class="blood-dur">Durata: Prolungata</span>
+                        </div>
+                        <div class="blood-card">
+                            <span class="blood-rank">Adulto</span>
+                            <p>Il sangue di un Adulto calmerà lentamente qualsiasi voglia di nutrirsi e qualsiasi stato di agitazione.</p>
+                            <span class="blood-dur">Durata: Breve</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEONATI -->
+                <div class="doc-block age-block">
+                    <h3 class="doc-title">1. Fascia d’Età: Neonati</h3>
+                    <p class="age-regen"><strong>Tempo di rigenerazione:</strong> 3 giorni (varia in base al tipo di ferita e all’assunzione di sangue umano)</p>
+
+                    <div class="rule-grid">
+                        <div class="rule-item">
+                            <h4>Sole</h4>
+                            <p>Anche pochi istanti rendono il vampiro debole, affaticato ed irritato.</p>
+                            <p class="soluzione"><strong>Soluzioni:</strong> La presenza prolungata sotto il sole senza coperture può danneggiare severamente il Neonato.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Fuoco</h4>
+                            <p>Un’arma tanto comune quanto letale. Causa rallentamento della rigenerazione delle ferite.</p>
+                            <p class="soluzione"><strong>Soluzioni:</strong> Evitare il fuoco, non attirare l’attenzione su di sé.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Frenesia</h4>
+                            <p>Il controllo è <strong>INSTABILE</strong>. Rabbia, fame, paura, dolore possono scatenarla facilmente.</p>
+                            <p class="soluzione"><strong>Soluzioni:</strong> Evitare provocazioni, nutrirsi di sangue umano o di quello di un Mentore.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Masquerade</h4>
+                            <p>Il neonato è <strong>OBBLIGATO</strong> a nascondere la sua vera identità. In caso contrario sarà punito.</p>
+                            <p class="soluzione"><strong>Possibili punizioni:</strong> reclusione obbligatoria, cambio totale dei connotati, cambiamento del gruppo e delle abitudini momentaneo.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Tagli e Amputazioni</h4>
+                            <p>Le ferite gravi (arti tranciati) sono difficili da guarire.</p>
+                            <p class="soluzione"><strong>Soluzioni:</strong> Rigenerazione lenta, evitare combattimenti diretti.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Immunità & Tossine</h4>
+                            <p>Il sistema immunitario rigetta agenti patogeni biologici standard. Le tossine assunte dal sangue delle vittime sono inefficaci.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADULTI -->
+                <div class="doc-block age-block">
+                    <h3 class="doc-title">2. Fascia d’Età: Adulti</h3>
+                    <p class="age-regen"><strong>Tempo di rigenerazione:</strong> 1 giorno e mezzo (varia in base a ferita e sangue umano)</p>
+
+                    <div class="rule-grid">
+                        <div class="rule-item">
+                            <h4>Sole</h4>
+                            <p>Sarà più irascibile sotto esposizioni prolungate. Diverse ore sotto il sole possono danneggiarlo severamente.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Fuoco</h4>
+                            <p>Causa rallentamento della rigenerazione. Evitare e non attirare attenzione.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Ombra Interiore</h4>
+                            <p>Conosce meglio la propria Ombra, ma a volte si illude di dominarla completamente.</p>
+                            <p class="soluzione"><strong>Soluzioni:</strong> Disciplina e autocontrollo. Necessità di sangue umano, adulto, mentore o originario.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Vincolo di Sangue</h4>
+                            <p>Possono creare patti e legare servitori e/o progenie futura con il proprio sangue, purché consenziente da ambo le parti.</p>
+                            <p class="soluzione"><strong>Attenzione:</strong> Si crea un legame quasi indissolubile. Scegliere con cura.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Tagli e Amputazioni</h4>
+                            <p>Guarigione più rapida rispetto ai neonati, ma resta pericolosa. Richiede ingenti risorse di sangue e tempo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MENTORI -->
+                <div class="doc-block age-block">
+                    <h3 class="doc-title">3. Fascia d’Età: Mentori</h3>
+                    <p class="age-regen"><strong>Tempo di rigenerazione:</strong> Poche ore (varia in base a ferita e sangue umano)</p>
+
+                    <div class="rule-grid">
+                        <div class="rule-item">
+                            <h4>Sole</h4>
+                            <p>Completamente abituato alla lunga esposizione ai raggi solari.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Ombra Interiore</h4>
+                            <p>Padroneggia alla perfezione la sua ombra interiore. Solo in casi estremi di forte stress emotivo necessita di sangue.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Vincolo di Sangue</h4>
+                            <p>Possono creare patti e legare servitori e/o progenie con il proprio sangue (consenso reciproco).</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Abbraccio</h4>
+                            <p>Possibilità di creare progenia qualora si sentissero pronti.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Tagli e Amputazioni</h4>
+                            <p>Guarigione molto più rapida, ma richiede comunque attenzione e risorse di sangue.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACIO -->
+                <div class="doc-block">
+                    <h3 class="doc-title">4. Dinamiche e Collaterali del “Bacio”</h3>
+                    <div class="rule-grid">
+                        <div class="rule-item">
+                            <h4>Bacio da Neonato</h4>
+                            <p><strong>Sul Mortale:</strong> Profonda sensazione di piacere e di estasi assoluta.</p>
+                            <p><strong>Sul Neonato:</strong> Scatena la Frenesia del sangue. Controllo minimo a causa della giovane età.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Bacio da Adulto</h4>
+                            <p><strong>Sul Mortale:</strong> Elevato piacere. Estasi che dura da poche ore a un giorno massimo. Forte senso di dipendenza.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Bacio da Mentore</h4>
+                            <p><strong>Sul Mortale:</strong> Piacere assoluto. Dipendenza molto più accentuata, quasi come una droga.</p>
+                        </div>
+                        <div class="rule-item">
+                            <h4>Bacio da Ekàton (Originario – GM)</h4>
+                            <p>Il sangue dell’Ekàton agisce come un perfetto palliativo: annulla completamente qualsiasi sintomo di dolore e ripristina all’istante l’energia vitale, azzerando i deficit fisici. Bere il sangue dell’Ekàton può provocare anche effetti indesiderati — gesto estremo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LESSICO ==================== -->
+        <section id="lessico" class="section">
+            <div class="vamp-card">
+                <h2>Lessico Vampirico</h2>
+                <div class="lexicon-grid">
+                    <div class="lex-item"><strong>Abbraccio</strong><span>L’atto di trasformare un mortale in un vampiro. Richiede rituale specifico e presenza di almeno un Originario.</span></div>
+                    <div class="lex-item"><strong>Adulto</strong><span>Il vampiro che ha superato la sete di sangue da neonato ed è in grado di controllare i propri istinti.</span></div>
+                    <div class="lex-item"><strong>Amarantum</strong><span>L’atto di consumare il sangue di un altro Fratello.</span></div>
+                    <div class="lex-item"><strong>Assoluzione</strong><span>Il momento in cui un vampiro cessa di esistere, attraversando il confine che separa la non-morte dalla vera morte.</span></div>
+                    <div class="lex-item"><strong>Bacio</strong><span>L’atto di bere il sangue da un mortale; suscita una sensazione di profonda estasi in chi lo riceve.</span></div>
+                    <div class="lex-item"><strong>Bambola di Sangue (volgare)</strong><span>Mortale che offre il suo sangue a un vampiro molteplici volte. Prova una soddisfazione perversa durante il Bacio e cerca attivamente questa sensazione come un’ossessione.</span></div>
+                    <div class="lex-item"><strong>Clan</strong><span>Gruppo di vampiri che condividono gli stessi ideali.</span></div>
+                    <div class="lex-item"><strong>Condanna</strong><span>Castigo supremo che condanna un vampiro alla morte sotto le zanne dei suoi stessi simili.</span></div>
+                    <div class="lex-item"><strong>Consanguineo</strong><span>Letteralmente “dello stesso sangue”. Fa riferimento in particolar modo al lignaggio.</span></div>
+                    <div class="lex-item"><strong>Cripta</strong><span>Riferimento specifico alla Cripta degli antenati Drakovic – De Lùne.</span></div>
+                    <div class="lex-item"><strong>Damnatio Memoriae</strong><span>Nuovo codice ideato dal clan Drakovic – De Lune per proteggere la natura di un vampiro.</span></div>
+                    <div class="lex-item"><strong>Fratelli</strong><span>Termine usato tra progenie per riconoscersi come membri della stessa dinastia.</span></div>
+                    <div class="lex-item"><strong>Impuro (volgare)</strong><span>Vampiro che caccia e si ciba di altri Fratelli (detto anche Sanguisuga).</span></div>
+                    <div class="lex-item"><strong>Infante</strong><span>Termine dispregiativo utilizzato per definire un giovane Fratello; in origine usato esclusivamente in riferimento alla propria progenie.</span></div>
+                    <div class="lex-item"><strong>Ingannatore</strong><span>Vampiro che seduce i mortali per nutrirsi del loro sangue, ma senza ucciderli.</span></div>
+                    <div class="lex-item"><strong>Legame di Sangue</strong><span>Vincolo tra due vampiri che decidono di vivere all’unisono, condividendo gioia, dolore e altre sensazioni.</span></div>
+                    <div class="lex-item"><strong>Masquerade (o Custodiae Umbrae)</strong><span>La tradizione di nascondere agli uomini l’esistenza dei vampiri. Istituita per proteggere i Fratelli dalla distruzione a opera dell’umanità.</span></div>
+                    <div class="lex-item"><strong>Mentore</strong><span>Vampiro adulto che si presta a insegnare ed educare la futura prole e che difende le regole dinastiche.</span></div>
+                    <div class="lex-item"><strong>Neonato</strong><span>Giovane Fratello abbracciato da poco tempo, ancora inesperto e in balia del sangue.</span></div>
+                    <div class="lex-item"><strong>Randagio</strong><span>Termine derisorio per definire quei vampiri che rifiutano di cibarsi di sangue umano e si nutrono esclusivamente di quello animale.</span></div>
+                    <div class="lex-item"><strong>Reietto</strong><span>Vampiro che rimane estraneo alla società vampirica, per ignoranza, scelta consapevole o esilio.</span></div>
+                    <div class="lex-item"><strong>Sete</strong><span>Lo stimolo a nutrirsi, simile a quello delle creature viventi. Per i vampiri è la necessità primaria che mette in secondo piano tutte le altre.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== STORIA ==================== -->
+        <section id="storia" class="section">
+            <div class="vamp-card">
+                <h2>Storia della Stirpe</h2>
+                <p style="margin-bottom:1.2rem; color:var(--text-dim); font-size:0.9rem;">
+                    Seleziona la versione o la sezione che ti serve.
+                </p>
+
+                <div class="storia-tabs" id="storia-tabs">
+                    <button type="button" class="storia-tab is-active" data-storia="v5">Storia Intera V5</button>
+                    <button type="button" class="storia-tab" data-storia="vitrio">Storia Test Vitrio</button>
+                    <button type="button" class="storia-tab" data-storia="sintesi">Sintesi</button>
+                    <button type="button" class="storia-tab" data-storia="morsi">Morsi</button>
+                    <button type="button" class="storia-tab" data-storia="post">Post Storia</button>
+                    <button type="button" class="storia-tab" data-storia="eventi">Eventi GM</button>
+                </div>
+
+                <!-- ===== STORIA INTERA V5 ===== -->
+                <div class="storia-panel is-active" id="storia-v5">
+                    <div class="doc-block">
+                        <h3 class="doc-title">Il Santuario delle Ombre</h3>
+                        <p class="azione">/azione Un sussurro di pietra si propaga tra le tombe. Le radici tortuose si tendono appena, e dal suolo sale un alito freddo che sa di terra antica e sangue secco.</p>
+                        <p>Immaginate un luogo dove il silenzio non è assenza di rumore, ma memoria viva. Esso è il cimitero della Reggia. Qui, ogni pietra, ogni radice tortuosa e ogni ombra che si allunga sul marmo racconta una storia che un cuore mortale non potrebbe reggere.</p>
+                        <p>Camminare tra queste tombe è come sfogliare un libro scritto col sangue. Non è un luogo di riposo, sapete? È un santuario consacrato alla notte eterna. Solo i grandi, i meritevoli della Stirpe, trovano posto qui. Ogni cripta è un giuramento scolpito, ogni urna un ricordo sacro che pulsa nell’oscurità.</p>
+                        <p>In questo luogo la terra sembra respirare; riconosce il peso dei corpi che custodisce. E quando la Luna Rossa sorge all'orizzonte, tutto muta. Le statue sembrano scuotersi di dosso la pietra, i corvi osservano muti dai rami e l’aria si fa densa, pesante... come se il mondo intero trattenesse il fiato davanti alla grandezza della nostra Stirpe.</p>
+                    </div>
+
+                    <div class="doc-block">
+                        <h3 class="doc-title">La statua</h3>
+                        <p class="note-gm">(Non pronunciate Selene ma solo madre, dovete essere generici e non inserire nella storia la presenza di Selene)</p>
+                        <p class="azione">/azione Gli occhi senza pupille della Madre si chiudono lentamente, poi si riaprono. Per un attimo il marmo sembra respirare, e chi la guarda sente un peso gelido posarsi sulla propria anima.</p>
+                        <p>In quel principio di tenebra, ci fu lei: la Madre che riportò i vampiri in questo mondo dopo il lunghissimo esilio all’Inferno.</p>
+                        <p>Quando il velo calò, fu proprio Vladamar a riportarla alla stirpe e a svelare il suo sangue antico, restituendole il posto che le spettava tra i nostri.</p>
+                        <p>E sapete? Lei non gridò. Non ebbe un solo tremito di paura.</p>
+                        <p>Accolse l’oscurità con la stessa dolcezza con cui una madre accoglie un figlio tra le braccia. Per questo la chiamiamo la Madre. È stata lei a insegnarci che la nostra sete non è follia, ma disciplina. Ci ha mostrato che la notte non è un luogo in cui fuggire, ma la nostra vera casa. E che l’eternità… l’eternità non è un premio, ma un peso che va portato con grazia assoluta.</p>
+                        <p>Oggi, lei si trova al fianco delle Arpie, nostre sovrane, a vegliare sul nostro destino.</p>
+                    </div>
+
+                    <div class="doc-block">
+                        <h3 class="doc-title">L’Ambizione di Vladamar e il Patto di Sangue</h3>
+                        <p class="azione">/azione Nella cattedrale le ombre delle colonne si allungano senza luce. Un battito lento e distante echeggi dalle volte, come un cuore di pietra che ricorda di esistere.</p>
+                        <p>Ma da dove veniamo? La nostra Stirpe discende da un uomo: <strong>Vladamar Drakovìc</strong>.</p>
+                        <p>All’inizio non era un mostro. Era un uomo come tanti, ma possedeva un’ambizione che divorava l'anima. Era colto, spietato e terribilmente umano. Cercava qualcosa che nessun trono terreno poteva offrirgli: voleva regnare non solo sul suo tempo, ma su ogni tempo. Voleva l’eternità.</p>
+                        <p>Fu così che Vladamar sfidò l’ignoto e cercò l’Innominabile. Cercò Satana stesso.<br>
+                        E l’Inferno, per una volta, decise di ascoltare.</p>
+                        <p>Satana non si mostrò in persona. Ma inviò un suo araldo, il demone <strong>Eurimono</strong>, divoratore di carne morta, custode dei cadaveri insepolti. Eurimono trovò in Vladamar un’anima simile alla propria: non malvagia per piacere, ma per volontà. Così prese esempio dalle Empuse, creature di un altro girone infernale, creature bellissime ed ammalianti che potevano trasformarsi in ciò che volevano per attirare a sé le prede; Eurimono voleva creare un qualcosa che fosse il suo esatto opposto.</p>
+                        <p>Così, suggellarono il Patto.<br>
+                        Il prezzo? Una sete eterna di sangue.<br>
+                        Il guadagno? Forza sovrumana, giovinezza imperitura, un’intelligenza senza confini e la Notte stessa come alleata.<br>
+                        Vladamar non esitò. Firmò col fuoco.</p>
+                        <p>In quell’istante preciso, la Terra tremò di puro terrore.<br>
+                        Maremoti devastarono le coste, tempeste nere oscurarono il cielo per settimane e la crosta terrestre si spaccò, esalando un fumo denso, come se l’Inferno stesse risalendo per reclamare il suo spazio.</p>
+                        <p>Poi, venne l’eclissi.<br>
+                        Un buio mai visto prima inghiottì il sole. Mentre l’ombra divorava la luce, la luna diventava tonda, ferma e rossa come una ferita aperta. Accadde allora il prodigio: il sangue dei caduti nelle catastrofi iniziò a sollevarsi. Migliaia di gocce rosse salirono verso il cielo come una nebbia al contrario, in un silenzio spettrale, finché non raggiunsero la luna.</p>
+                        <p>E la luna vide. E comprese che stava nascendo qualcosa di mai visto.<br>
+                        Come omaggio alla nuova Stirpe, la luna forgiò un’arma. Anzi, due.<br>
+                        Dal cielo insanguinato caddero due fulmini che andarono a conficcarsi nel cuore della cripta dei Drakovìc, proprio dove Vladamar stava rinascendo.</p>
+                        <p>Erano le spade gemelle: <strong>Sanguinaris</strong> e <strong>Umbrael</strong>. La Lama della Sete e la Lama dell’Ombra.<br>
+                        Forgiate con metalli che non appartengono a questo mondo. Si dice che solo chi scorre del sangue del Primo Genito possa impugnare entrambe senza esserne consumato.</p>
+                        <div class="doc-closing">
+                            <p>Da quella notte, noi siamo qui.</p>
+                            <p>Figli del sangue. Figli della sete.</p>
+                            <p><strong>Eterni figli del buio.</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== STORIA TEST VITRIO ===== -->
+                <div class="storia-panel" id="storia-vitrio">
+                    <div class="doc-block">
+                        <h3 class="doc-title">Il Santuario delle Ombre</h3>
+                        <p>Fermatevi un istante... Osservate ciò che vi circonda.</p>
+                        <p>Questo non è un semplice cimitero. Non è un luogo destinato al riposo dei morti, né un angolo dimenticato dal mondo dei vivi. Quello che avete davanti agli occhi è il Santuario delle Ombre, il cimitero della Reggia. Un luogo in cui persino il silenzio sembra avere una voce, e ogni pietra custodisce una memoria che il tempo non ha avuto il coraggio di cancellare.</p>
+                        <p>Guardate queste tombe. Osservate le cripte, le statue, i nomi incisi nel marmo. Ognuna di esse racconta una storia. Storie di potere, di sacrificio, di fedeltà e di sangue. Storie appartenute a coloro che hanno lasciato un segno indelebile nella nostra Stirpe.</p>
+                        <p>Qui non trovano dimora tutti. Ricordatelo.</p>
+                        <p>Questo è un luogo consacrato ai grandi, a coloro che hanno dimostrato di meritare un posto nell'eternità. Non basta aver vissuto a lungo per riposare tra queste pietre. Non basta aver bevuto sangue, né aver attraversato i secoli. Occorre aver lasciato qualcosa che nemmeno la morte possa reclamare.</p>
+                        <p>Ogni cripta è un giuramento. Ogni urna è una memoria sacra. Ogni nome inciso nel marmo rappresenta un frammento della nostra storia.</p>
+                        <p>E quando la Luna Rossa si leva all'orizzonte... tutto cambia.</p>
+                        <p>Le ombre si allungano, le statue sembrano risvegliarsi dal loro sonno millenario e i corvi, immobili sui rami, osservano ogni cosa senza emettere un solo verso. La terra stessa sembra respirare, come se riconoscesse il sangue di coloro che custodisce.</p>
+                        <p>Perché questa terra non dimentica. E nemmeno noi dovremmo farlo.</p>
+                    </div>
+
+                    <div class="doc-block">
+                        <h3 class="doc-title">La Statua della Madre</h3>
+                        <p>Avvicinatevi... e osservatela attentamente.</p>
+                        <p>Questa non è una statua qualunque. Davanti a voi si trova la Madre.</p>
+                        <p>Per comprendere ciò che siamo oggi, dovete conoscere ciò che accadde allora. Dovete comprendere chi ci ha restituiti a questo mondo, dopo un esilio tanto lungo da sembrare eterno.</p>
+                        <p>Quando la nostra Stirpe era stata inghiottita dalle profondità infernali, quando ogni speranza sembrava ormai perduta e il mondo aveva dimenticato persino il nostro nome, fu lei a tornare.</p>
+                        <p>La Madre fu riportata tra noi dopo il lunghissimo esilio all'Inferno. E fu proprio Vladamar a ricondurla alla Stirpe, a riconoscere il suo sangue antico e a restituirle il posto che le spettava.</p>
+                        <p>Ma sapete cosa la rese degna di essere ricordata? Non fu soltanto il suo sangue. Non fu soltanto la sua origine. Fu il modo in cui affrontò l'oscurità.</p>
+                        <p>Non gridò. Non implorò. Non ebbe un solo tremito di paura davanti all'abisso che le si spalancava dinanzi. Accolse le tenebre senza opporre resistenza, con una serenità che pochi esseri sarebbero stati capaci persino di comprendere.</p>
+                        <p>Come una madre accoglie un figlio tra le proprie braccia, così lei accolse l'oscurità.</p>
+                        <p>Ed è per questo che la chiamiamo Madre.</p>
+                        <p>Fu lei a insegnarci che la sete non è una condanna, ma una disciplina. Che il sangue non è soltanto nutrimento, ma memoria, appartenenza e potere. Ci insegnò che non dobbiamo temere la notte, perché la notte non è il luogo in cui ci nascondiamo: è il luogo al quale apparteniamo.</p>
+                        <p>E soprattutto ci insegnò una verità che dovreste portare con voi per tutta l'eternità...</p>
+                        <p><strong>L'immortalità non è un premio. È un peso.</strong></p>
+                        <p>Un peso che pochi sono capaci di sostenere, e che soltanto i più forti possono portare senza perdere la propria dignità.</p>
+                        <p>Oggi la Madre si trova al fianco delle Arpie, nostre sovrane, vegliando sul destino della Stirpe.</p>
+                        <p>E così, anche quando il mondo tace, anche quando i secoli passano e i nomi vengono dimenticati, la sua presenza continua a ricordarci da dove veniamo.</p>
+                        <p><em>Non dimenticate mai chi ci ha restituiti alla notte.</em></p>
+                    </div>
+
+                    <div class="doc-block">
+                        <h3 class="doc-title">L'Ambizione di Vladamar e il Patto di Sangue</h3>
+                        <p>Ora, però, lasciate che vi racconti qualcosa di ancora più antico.</p>
+                        <p>Una domanda, prima di proseguire: vi siete mai chiesti da dove abbia avuto origine la nostra Stirpe? Chi sia stato il primo a desiderare ciò che persino gli dèi sembravano negare agli uomini?</p>
+                        <p>La nostra storia comincia con un uomo.<br>
+                        Il suo nome era <strong>Vladamar Draković</strong>.</p>
+                        <p>Non nacque mostro. Non venne al mondo con zanne o artigli, né con la sete che oggi scorre nelle nostre vene. Era un uomo, proprio come quelli che ancora camminano ignari sotto la luce del sole.</p>
+                        <p>Ma possedeva qualcosa che gli altri non avevano: un'ambizione smisurata.</p>
+                        <p>Era colto, intelligente, spietato. Un uomo capace di osservare il mondo e vedere soltanto i suoi limiti. I troni terreni non gli bastavano. Le ricchezze non lo appagavano. Il potere sugli uomini non rappresentava che una piccola conquista.</p>
+                        <p>Vladamar desiderava qualcosa di molto più grande.</p>
+                        <p>Non voleva semplicemente governare il mondo. Voleva governare il tempo stesso.</p>
+                        <p>Desiderava un'esistenza che non conoscesse tramonto, una vita che nessuna malattia potesse spezzare e che nessuna lama fosse in grado di concludere.</p>
+                        <p>Voleva l'eternità.</p>
+                        <p>E quando un uomo desidera qualcosa più della propria anima, prima o poi finisce per cercare qualcuno disposto a comprargliela.</p>
+                        <p>Fu così che Vladamar rivolse il proprio sguardo verso l'ignoto. Oltrepassò i confini della conoscenza umana, sfidò ciò che nessun mortale avrebbe dovuto sfidare e invocò l'Innominabile.</p>
+                        <p>Cercò Satana stesso.</p>
+                        <p>E l'Inferno, per una volta, rispose.</p>
+                        <p>Ma non fu Satana a presentarsi davanti a lui. Dalle profondità venne inviato un araldo, un essere antico e terribile: il demone <strong>Eurimono</strong>, divoratore di carne morta, custode dei cadaveri insepolti.</p>
+                        <p>Eurimono riconobbe immediatamente in Vladamar qualcosa di familiare.</p>
+                        <p>Non trovò un uomo spinto da un semplice desiderio di malvagità. Trovò un'anima divorata dalla volontà di oltrepassare ogni limite. Un uomo disposto a sacrificare tutto pur di ottenere ciò che desiderava.</p>
+                        <p>Fu allora che maturò il progetto.</p>
+                        <p>Prendendo ispirazione dalle Empuse, creature di un altro girone infernale, bellissime e ammalianti, capaci di mutare il proprio aspetto per attirare le prede, Eurimono concepì qualcosa di differente.</p>
+                        <p>Non avrebbe creato creature destinate a ingannare attraverso la bellezza.</p>
+                        <p>Avrebbe dato vita a qualcosa di opposto. Una Stirpe destinata a dominare attraverso la forza, la volontà e una sete impossibile da estinguere.</p>
+                        <p>E così venne suggellato il Patto.</p>
+                        <p>Fermatevi a riflettere, perché ciò che accadde in quel momento cambiò per sempre il destino del mondo.</p>
+                        <p>Il prezzo era terribile: una sete eterna di sangue, un bisogno che nessun tempo avrebbe potuto placare.</p>
+                        <p>Ma ciò che Vladamar avrebbe ottenuto era altrettanto straordinario.</p>
+                        <p>Forza sovrumana. Giovinezza imperitura. Un'intelligenza senza confini. La capacità di attraversare i secoli senza essere consumato dal tempo.</p>
+                        <p>E soprattutto, un'alleata che nessun mortale avrebbe mai potuto possedere: la Notte stessa.</p>
+                        <p>Vladamar non esitò. Non indietreggiò davanti al prezzo. Non chiese pietà, né cercò di rinegoziare le condizioni.</p>
+                        <p>Accettò.</p>
+                        <p>E firmò il Patto con il fuoco.</p>
+                        <p>E allora... il mondo tremò.</p>
+                        <p>Non fu un semplice terremoto. Fu come se la Terra stessa avesse percepito ciò che era appena accaduto e avesse cercato, invano, di opporsi.</p>
+                        <p>I mari si sollevarono, inghiottendo intere coste. Maremoti devastarono le terre emerse, tempeste nere oscurarono il cielo per settimane e la crosta terrestre si spaccò in più punti, lasciando fuoriuscire nubi di fumo denso e innaturale.</p>
+                        <p>Era come se l'Inferno avesse trovato una breccia attraverso cui reclamare il proprio spazio.</p>
+                        <p>Ma il vero prodigio doveva ancora manifestarsi.</p>
+                        <p>Poi venne l'eclissi.</p>
+                        <p>Il sole scomparve. La luce venne inghiottita da un'oscurità innaturale e il mondo intero precipitò in un silenzio che nessun essere vivente avrebbe mai dimenticato.</p>
+                        <p>E mentre il giorno veniva divorato, la Luna si mostrò.</p>
+                        <p>Era immensa, perfettamente rotonda, immobile nel cielo. Il suo colore era rosso, intenso, profondo... come una ferita aperta nel firmamento.</p>
+                        <p>Fu allora che accadde qualcosa di impossibile.</p>
+                        <p>Il sangue dei caduti durante le catastrofi iniziò a sollevarsi dal terreno. Migliaia, milioni di gocce si staccarono dalla terra, dai corpi e dalle pietre, salendo lentamente verso il cielo.</p>
+                        <p>Non cadevano.</p>
+                        <p>Salivano.</p>
+                        <p>Come una pioggia capovolta, come se una forza invisibile stesse richiamando a sé ogni goccia di sangue versata nel mondo.</p>
+                        <p>Un fiume cremisi attraversò l'aria, raggiunse le nubi e infine si disperse verso la Luna.</p>
+                        <p>E la Luna vide.</p>
+                        <p>Vide ciò che stava nascendo. Vide il patto, il sacrificio e la nuova Stirpe che avrebbe attraversato i secoli.</p>
+                        <p>E volle lasciare un segno.</p>
+                        <p>Un dono. Un riconoscimento. Un'arma degna di coloro che stavano per nascere.</p>
+                        <p>Anzi, non una.</p>
+                        <p>Due.</p>
+                        <p>Dal cielo insanguinato precipitarono due fulmini, così luminosi da squarciare l'oscurità. Attraversarono le nubi e si abbatterono nel cuore della cripta dei Drakovìc, proprio dove Vladamar stava rinascendo.</p>
+                        <p>Quando il bagliore svanì, nella pietra giacevano due spade.</p>
+                        <p>Le spade gemelle.</p>
+                        <p><strong>Sanguinaris e Umbrael.</strong></p>
+                        <p>La Lama della Sete e la Lama dell'Ombra.</p>
+                        <p>Forgiate con metalli che non appartengono a questo mondo, nate da un prodigio che ancora oggi nessuna conoscenza mortale sarebbe in grado di spiegare.</p>
+                        <p>Due armi, un'unica origine. Due poteri legati indissolubilmente alla nascita della nostra Stirpe.</p>
+                        <p>E si narra che soltanto colui nelle cui vene scorre il sangue del Primo Genito possa impugnarle entrambe senza essere consumato dalla loro stessa essenza.</p>
+                        <p>Perché quelle lame non sono semplici armi.</p>
+                        <p>Sono il ricordo tangibile del Patto. La testimonianza di un'ambizione che osò sfidare l'eternità e ne uscì vittoriosa.</p>
+                        <p>Ed eccoci qui.</p>
+                        <p>Ora conoscete le nostre origini.</p>
+                        <p>Sapete che non siamo nati dal caso, né da una semplice maledizione. Siamo il risultato di un'ambizione, di un patto infernale e di un evento che ha cambiato per sempre il destino del mondo.</p>
+                        <p>Siamo nati dal desiderio di un uomo che rifiutò di accettare la propria mortalità.</p>
+                        <p>Siamo stati forgiati dal sangue, consacrati dalla Notte e riconosciuti dalla Luna Rossa.</p>
+                        <p>E da quella notte, nulla è stato più come prima.</p>
+                        <p>I secoli sono passati. I regni sono caduti. Gli imperi sono stati divorati dalla polvere e gli uomini hanno continuato a nascere, invecchiare e morire, convinti che la loro breve esistenza fosse tutto ciò che il mondo potesse offrire.</p>
+                        <p>Ma noi siamo rimasti.</p>
+                        <p>Abbiamo attraversato guerre, tradimenti, esili e rinascite. Abbiamo conosciuto la perdita, la sete e il peso dell'eternità.</p>
+                        <p>Eppure siamo ancora qui.</p>
+                        <p>Perché il nostro sangue ricorda ciò che il mondo ha dimenticato.</p>
+                        <div class="doc-closing">
+                            <p>Noi siamo figli di Vladamar.</p>
+                            <p>Figli del Patto. Figli della Luna Rossa.</p>
+                            <p>Figli del sangue.</p>
+                            <p>Figli della sete.</p>
+                            <p><strong>Eterni figli del buio.</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SINTESI ===== -->
+                <div class="storia-panel" id="storia-sintesi">
+                    <div class="doc-block">
+                        <p>All'interno del nostro Santuario delle Ombre, dove ogni pietra e ogni radice tortuosa custodiscono memorie che un cuore mortale non potrebbe reggere, si svela la vera storia della nostra Stirpe. Camminare tra queste tombe, consacrate alla notte eterna, significa sfogliare un libro scritto col sangue, riservato solo ai grandi e ai meritevoli di noi. Qui la terra stessa respira, e quando la Luna Rossa sorge, le statue si scuotono e l'aria si fa pesante, come se il mondo intero trattenesse il fiato davanti alla nostra grandezza.</p>
+                        <p class="azione">/azione Tra le radici tortuose e le pietre secolari del Santuario, la terra sembra quasi respirare. L'aria si fa pesante, carica del peso di memorie antiche che un cuore mortale non potrebbe mai reggere.</p>
+                        <p class="note-gm">(Non pronunciate Selene ma solo madre, dovete essere generici e non inserire nella storia la presenza di Selene)</p>
+                        <p>Tutto ebbe inizio con la Madre che riportò i vampiri in questo mondo dopo il lunghissimo esilio all’Inferno. Quando il velo calò, fu proprio Vladamar a riportarla alla stirpe e a svelare il suo sangue antico, restituendole il posto che le spettava tra i nostri. Lei non gridò, non ebbe un solo tremito di paura: accolse l’oscurità con la stessa dolcezza con cui una madre accoglie un figlio tra le braccia. Per questo la chiamiamo la Madre. È stata lei a insegnarci che la nostra sete non è follia, ma disciplina, e che l’eternità è un peso da portare con grazia assoluta. Oggi lei si trova al fianco delle Arpie, nostre sovrane, a vegliare sul nostro destino.</p>
+                        <p>Ma le nostre origini affondano ancora più a fondo, nel patto audace stretto dal nostro capostipite, <strong>Vladamar Drakovìc</strong>. Uomo colto e divorato da un'ambizione smisurata, Vladamar non cercava un trono terreno, ma voleva regnare su ogni tempo. Sfidò l'ignoto e invocò l'Innominabile, spingendo l'Inferno ad ascoltarlo attraverso il demone Eurimono.</p>
+                        <p class="azione">/azione Un brivido improvviso gela la stanza, mentre una luce cremisi filtra tra i rami: la Luna Rossa è sorta, tingendo ogni cosa del sangue della notte eterna e ricordando a chiunque calpesti questo suolo la grandezza della Stirpe.</p>
+                        <p>Da quell'incontro nacque il Patto di Sangue: in cambio di una sete eterna, Vladamar ricevette forza sovrumana, giovinezza imperitura e la Notte come alleata. In quell'istante la Terra tremò, tempeste nere oscurarono il cielo e un'eclissi totale avvolse il mondo, mentre la luna diventava rossa come una ferita aperta. Il sangue dei caduti si sollevò verso il cielo in un silenzio spettrale, e la luna, comprendendo la nascita della nostra Stirpe, benediceva l'evento forgiando due armi celesti: le spade gemelle <strong>Sanguinaris</strong> e <strong>Umbrael</strong>, destinate a chi scorre del sangue del Primo Genito. Da quella notte noi siamo qui, eterni figli del buio.</p>
+                        <p class="azione">/azione Nell'oscurità che avvolge le tombe consacrate, il silenzio si fa assoluto e solenne. È il richiamo della prima notte, la quiete immobile che precede il risveglio di chi custodisce il segreto dell'eternità.</p>
+                    </div>
+                </div>
+
+                <!-- ===== MORSI ===== -->
+                <div class="storia-panel" id="storia-morsi">
+                    <div class="doc-block">
+                        <h3 class="doc-title">Morso per nutrimento</h3>
+                        <p>Il morso del vampiro viene utilizzato per nutrirsi, prelevando solo poche gocce di sangue, e non sempre richiede il consenso, perciò fate molta attenzione. L'atto provoca una leggera debolezza iniziale, un lieve mal di testa e una forte euforia che dura da poche ore a un giorno massimo, con un limite di 1 o 2 morsi giornalieri per evitare rischi fatali.</p>
+                        <p>Subito dopo l'evento si dimenticherà tutto ciò che è accaduto, e sarà possibile ricordarlo solo se qualcuno ha assistito direttamente alla scena, lasciando visibili solo piccoli lividi sul collo.</p>
+                        <p>Il morso nei prossimi 3 giorni, non di più, susciterà in voi una forte attrazione per noi, al tal punto da poter volere un altro morso.</p>
+                    </div>
+                    <div class="doc-block">
+                        <h3 class="doc-title">Morso a scopo erotico</h3>
+                        <p>Non scendendo troppo nei dettagli, vi basti sapere che noi vampiri abbiamo gli organi interni completamente collassati, fatta eccezione per il cervello; di conseguenza, il morso erotico è l'unico modo per provare emozioni più forti e intense con il nostro partner.</p>
+                    </div>
+                    <div class="doc-block">
+                        <h3 class="doc-title">Morso per trasformazione</h3>
+                        <p>Così voi umani lo definite in un certo modo, noi lo chiamiamo <strong>'abbraccio'</strong>: un vero e proprio abbraccio con la morte per rinascere a nuova vita.</p>
+                    </div>
+                </div>
+
+                <!-- ===== POST STORIA ===== -->
+                <div class="storia-panel" id="storia-post">
+                    <div class="doc-block">
+                        <h3 class="doc-title">Note operative post-storia</h3>
+                        <ul class="doc-list">
+                            <li>Ricordatevi di chiedere se hanno un dono per voi, prendere il dollaro d’argento, e donare una moneta vampiri presente nel deposito dinastia, e depositare il dollaro d’argento.</li>
+                            <li>Ricordatevi poi di far mandare un puntino in chat punti sul discord principale, e inviare il discord ID nel canale predisposto su discord vampiri.</li>
+                        </ul>
+                        <p class="note-gm" style="margin-top:1.2rem;"><strong>Per ogni dubbio chiedere e non improvvisare!</strong></p>
+                    </div>
+                </div>
+
+                <!-- ===== EVENTI GM ===== -->
+                <div class="storia-panel" id="storia-eventi">
+                    <div class="doc-block">
+                        <h3 class="doc-title">Frasi da inviare con lo /evento <span class="badge-obbligatorio">RISERVATI GM</span></h3>
+                        <p style="margin-bottom:1rem; color:var(--text-dim); font-size:0.85rem;">Intro:</p>
+                        <div class="evento-box">
+                            <code>/evento Alla presenza degli umani, alcune ombre incuriosite vagano tra i presenti</code>
+                        </div>
+                        <div class="evento-box">
+                            <code>/evento L'aria si fa improvvisamente densa, carica dell'odore dolciastro di resina e terra antica. Dall'alto della chioma dell'Albero Cremisi, alcune foglie si staccano come gocce di sangue vivo nel vento. Un paio di queste, vellutate e calde come carne, danzano nell'aria prima di adagiarsi con precisione innaturale sul volto dei presenti. Al contatto, una scossa gelida percorre la loro pelle: non è solo vegetazione, è il respiro del cimitero che lo osserva.</code>
+                        </div>
+                        <div class="evento-box">
+                            <code>/evento Un rumore simile a pietra che sfrega su pietra echeggia nel silenzio, mentre le giunture della statua si muovono con una lentezza innaturale. Il marmo, freddo e implacabile, sembra trasmutarsi in carne pallida e vitrea. La statua volge il suo sguardo privo di pupille verso i presenti: non sta guardando i loro volti, ma le loro anime. Un peso insostenibile grava sul petto di chiunque incroci i suoi occhi, come se ogni peccato commesso venisse improvvisamente messo a nudo sotto il suo giudizio silenzioso.</code>
+                        </div>
+                        <div class="evento-box">
+                            <code>/evento Le fiamme dei bracieri nella sala del trono impallidiscono di colpo. Dagli angoli più bui della stanza, le ombre smettono di seguire le leggi della fisica: si staccano dalle pareti, strisciando sul pavimento come nebbia nera e densa. Si insinuano tra i piedi dei presenti, risalendo gelide lungo le gambe.</code>
+                        </div>
+                        <div class="evento-box">
+                            <code>/evento L'oscurità della sala del trono sembra prendere vita propria. Ombre lunghe e affilate come artigli si allungano dai pilastri, insinuandosi tra i presenti con movimenti fluidi e silenziosi. Accarezzano i colli, sfiorano i vestiti e si addensano attorno ai cuori dei presenti, facendone rallentare i battiti. Non è semplice assenza di luce, ma una presenza senziente e affamata che scruta dall'oscurità, in attesa di un solo passo falso per ghermire chiunque osi mancare di rispetto al trono.</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== RITUALE OSPITI ==================== -->
+        <section id="rituale" class="section">
+            <div class="vamp-card">
+                <h2>Rituale – Ospiti</h2>
+                <p style="margin-bottom:1.5rem; color:var(--text-dim); font-size:0.9rem;">
+                    Cerimonia di accoglienza di un umano oltre la soglia della Dinastia.
+                </p>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Colui che dirige il rituale</h3>
+                    <p>Dimmi, umano… cosa ti conduce fin qui, oltre la soglia della nostra Dinastia?<br>
+                    È la sete di potere a guidare i tuoi passi? Il terrore della morte?<br>
+                    O forse è soltanto quella curiosità che spinge gli stolti a scrutare ciò che sarebbe dovuto rimanere nell’ombra?</p>
+                </div>
+
+                <div class="doc-block">
+                    <p class="azione">/azione Dalle profondità abissali dove il silenzio si fa sostanza e dalle vette sferzate dai venti primordiali, levano le loro voci in un richiamo che scuote le fondamenta stesse della realtà, invocando il ritorno delle Arpie dalle loro dimore dimenticate.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 1</h3>
+                    <p>Udite, o Arpie dalle ali di tempesta.<br>
+                    Accostatevi a questo cerchio e posate il vostro sguardo su colui che vi è stato condotto.<br>
+                    Egli è qui, dinanzi a voi, pronto a suggellare con il calore del proprio sangue un patto che non conosce ripensamento.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 2</h3>
+                    <p>Che ogni goccia versata divenga un sigillo inciso nell’eternità.<br>
+                    Che nulla di ciò che accade entro queste mura trovi mai la via per il mondo esterno.<br>
+                    Ciò che viene pronunciato qui appartiene alle ombre.<br>
+                    Ciò che viene consacrato qui, alle ombre ritornerà.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 1</h3>
+                    <p>Spalancate i vostri occhi d’ebano e penetrate oltre la carne.<br>
+                    Interrogate il suo cuore, frugate nelle pieghe più oscure del suo spirito.<br>
+                    Rivelateci se ciò che alberga in lui è tempra di diamante…<br>
+                    o semplice fango, destinato a essere inghiottito dall’oblio.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 2</h3>
+                    <p>Leggete nel fumo di questo sacrificio il filo del destino che lo attende.<br>
+                    Gloria imperitura…<br>
+                    o l’eterno tormento riservato a coloro che osano tradire il sangue?</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 1</h3>
+                    <p>Ora, <strong>[NOME]</strong>, il momento è giunto.<br>
+                    Non vi è più spazio per l’esitazione.<br>
+                    Lascia che il calore del tuo sangue abbandoni la carne e cada nel nostro giudizio.<br>
+                    Attingi a qualunque lama; che il tuo gesto non sia vuoto, né dettato dalla paura.<br>
+                    Offri ciò che pulsa dentro di te.<br>
+                    Offrilo senza esitazione, perché ciò che viene donato a questo cerchio non può essere ripreso.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 2</h3>
+                    <p>Consegna alle ombre la linfa stessa della tua vita.<br>
+                    Lascia che il sangue parli là dove le parole non hanno più valore.<br>
+                    Che sia questa la prova suprema della tua fedeltà.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 1</h3>
+                    <p>Bene… è giunto il momento di versare il vostro sangue.</p>
+                </div>
+
+                <div class="doc-block">
+                    <p class="azione">/azione Le Arpie sono agitate… i loro sussurri si intrecciano nell’aria.<br>
+                    È un presagio di qualcosa che ancora si può comprendere: forse una promessa oppure una condanna…</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 2</h3>
+                    <p>…Il patto è suggellato.<br>
+                    Da questo istante, e finché il tuo destino non avrà rivelato il proprio volto, vivrai tra noi come ospite, sotto lo sguardo vigile della Dinastia.</p>
+                </div>
+
+                <div class="doc-block">
+                    <h3 class="doc-title">Voce 1</h3>
+                    <p>Ricorda bene ciò che sei.<br>
+                    Sei accolto/a…<br>
+                    ma non sei ancora uno/a di noi.</p>
+                    <p>Cammina dunque con cautela, umano.<br>
+                    Le ombre osservano ogni tuo passo.</p>
+                    <p><strong>Buona fortuna, uman*.</strong></p>
+                </div>
+
+                <div class="doc-block" style="margin-top:2.5rem;">
+                    <h3 class="doc-title">Damnatio Memoriae — Lettura rituale</h3>
+                    <p style="font-size:0.85rem; color:var(--text-dim); margin-bottom:1rem;">(Da leggere a voci alternate durante il rito)</p>
+
+                    <p><strong>L’Occultamento <span style="color:var(--gold-dim); font-size:0.75rem;">(Voce 1)</span></strong><br>
+                    Il vampiro cela la propria natura. Agli umani e alle altre creature non sarà rivelata l’esistenza della stirpe, né la propria appartenenza ad essa.<br>
+                    Il vampiro proteggerà la propria identità, quella dei suoi fratelli e ogni segreto della propria Dinastia.</p>
+
+                    <p style="margin-top:1rem;"><strong>Il Segreto <span style="color:var(--gold-dim); font-size:0.75rem;">(Voce 2)</span></strong><br>
+                    Le origini, i riti, i poteri, le debolezze e i segreti della stirpe appartengono al Sangue.<br>
+                    Ciò che appartiene al Sangue non sarà rivelato a chi ne è estraneo.</p>
+
+                    <p style="margin-top:1rem;"><strong>Il Consenso <span style="color:var(--gold-dim); font-size:0.75rem;">(Voce 3)</span></strong><br>
+                    Fuori dalla Cittadella, il vampiro può nutrirsi di un umano solo e indifeso senza il suo consenso, purché il morso non lasci memoria né riveli la natura del vampiro.<br>
+                    Nella Cittadella, il consenso è legge. Nessun Sangue sarà preso senza essere offerto.<br>
+                    Ovunque dimori, il vampiro manterrà celata la propria natura.<br>
+                    La fame, la rabbia, il desiderio o la vendetta non saranno giustificazione alla violazione del Damnatio Memoriae.</p>
+
+                    <p style="margin-top:1rem;"><strong>La Conseguenza <span style="color:var(--gold-dim); font-size:0.75rem;">(Voce 4)</span></strong><br>
+                    Chi infrange il Patto risponderà delle proprie azioni.<br>
+                    Ogni violazione sarà giudicata secondo la gravità dell’atto, del danno arrecato e del pericolo posto alla dinastia.<br>
+                    Nessun vampiro è al di sopra della Legge.</p>
+
+                    <div class="doc-closing" style="margin-top:1.5rem;">
+                        <p><strong>Questo è il Patto.</strong></p>
+                        <p><strong>Questo è il dovere del Sangue.</strong></p>
+                        <p><strong>Questo è il prezzo dell’Ombra.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Horde RP V5 - Manuale Vampiri - Solo a scopo ludico © 2026 • Vitrio - Tutti i diritti riservati
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
