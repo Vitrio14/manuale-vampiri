@@ -30,7 +30,8 @@
             <a class="nav-link" data-section="lessico">Lessico</a>
             <a class="nav-link" data-section="storia">Storia</a>
             <a class="nav-link" data-section="rituale">Rituale Ospiti</a>
-            <a class="nav-link" href="https://docs.google.com/document/d/1-0kgvTtXHAmbzzMrlTYVQuMX9Uc-CQy7B6gm6cL5-98/edit?tab=t.0" target="_blank" rel="noopener">Manuale Completo ↗</a>
+            <a class="nav-link" data-section="libro">Manuale Completo</a>
+            <a class="nav-link nav-external" href="https://horde-vampiri.vitriotv.com" target="_blank" rel="noopener">Portale ↗</a>
         </div>
 
         <div class="nav-logout"></div>
@@ -69,6 +70,11 @@
                     <div class="stat-card" style="cursor:pointer;" onclick="showSection('rituale')">
                         <h3>Il Rituale</h3>
                         <p style="font-size:1rem;">Ospiti</p>
+                    </div>
+                    <div class="stat-card" style="cursor:pointer;" onclick="showSection('libro')">
+                        <h3>Il Libro</h3>
+                        <p style="font-size:1rem;">Manuale Completo</p>
+
                     </div>
                 </div>
             </div>
@@ -733,6 +739,261 @@
                         <p><strong>Questo è il Patto.</strong></p>
                         <p><strong>Questo è il dovere del Sangue.</strong></p>
                         <p><strong>Questo è il prezzo dell’Ombra.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== MANUALE COMPLETO (stile Codex) ==================== -->
+        <section id="libro" class="section">
+            <div class="manuale-screen">
+                <div class="manuale-cover-view" id="manuale-cover-view">
+                    <p class="manuale-kicker">Enciclopedia delle Creature della Notte</p>
+                    <div class="manuale-covers-row">
+                        <div class="manuale-cover-card">
+                            <button type="button" class="manuale-cover-btn" id="manuale-open-v1" aria-label="Apri Volume 1">
+                                <img src="assets/fronte-libro.png" alt="Manuale del Vampiro — Volume I" class="manuale-cover-img">
+                            </button>
+                            <button type="button" class="manuale-cta" id="manuale-cta-v1">Apri Volume 1 →</button>
+                            <p class="manuale-cover-label">Volume I</p>
+                        </div>
+                        <div class="manuale-cover-card">
+                            <button type="button" class="manuale-cover-btn" id="manuale-open-v2" aria-label="Apri Volume 2">
+                                <img src="assets/fronte-libro-v2.png" alt="Manuale del Vampiro — Volume II" class="manuale-cover-img">
+                            </button>
+                            <button type="button" class="manuale-cta" id="manuale-cta-v2">Apri Volume 2 →</button>
+                            <p class="manuale-cover-label">Volume II</p>
+                        </div>
+                    </div>
+                    <p class="manuale-tag">Natura · Poteri · Morso · Società · Debolezze</p>
+                    <p class="manuale-vol">Compilato dagli Studiosi dell’Oscurità</p>
+                </div>
+
+                <div class="manuale-inside" id="manuale-inside" hidden>
+                    <div class="manuale-sheet">
+                        <header class="manuale-head">
+                            <div class="manuale-brand">
+                                <span class="manuale-brand-mark">🩸</span>
+                                <div>
+                                    <div class="manuale-brand-title">Manuale del Vampiro</div>
+                                    <div class="manuale-brand-sub">appunti della Stirpe</div>
+                                </div>
+                            </div>
+                            <div class="manuale-head-actions">
+                                <button type="button" class="manuale-btn-cover" id="manuale-close">Copertina</button>
+                                <span class="manuale-head-link">Manuale completo</span>
+                            </div>
+                        </header>
+<div class="manuale-vol-pane is-on" id="manuale-v1">
+                            <nav class="manuale-nav">
+                                <button type="button" class="manuale-nav-btn is-on" data-page="intro">Introduzione</button>
+                                <button type="button" class="manuale-nav-btn" data-page="sommario">Sommario</button>
+                                <button type="button" class="manuale-nav-btn" data-page="cap1">Cap. I Anatomia</button>
+                                <button type="button" class="manuale-nav-btn" data-page="cap1b">Cap. I Sensi</button>
+                                <button type="button" class="manuale-nav-btn" data-page="cap2">Cap. II Neonato</button>
+                                <button type="button" class="manuale-nav-btn" data-page="cap2b">Cap. II Adulto</button>
+                                <button type="button" class="manuale-nav-btn" data-page="cap2c">Cap. II Mentore</button>
+                                <button type="button" class="manuale-nav-btn" data-page="cap3">Cap. III Morso</button>
+                                <button type="button" class="manuale-nav-btn" data-page="cap3b">Cap. III Tipi</button>
+                            </nav>
+
+                            <div class="manuale-hero">
+                                <p class="manuale-hero-kicker">Formule e leggi del sangue</p>
+                                <h2 class="manuale-hero-title">Manuale del Vampiro</h2>
+                                <p class="manuale-hero-lead">Non è solo sete. È disciplina, memoria e ombra.<br>Qui trovi natura, poteri, morso e debolezze della Stirpe.</p>
+                                <p class="manuale-hero-foot">Un patto contro l’oblio. Un appunto per restare nell’ombra.</p>
+                            </div>
+
+                            <div class="manuale-pages">
+
+                                <article class="manuale-page is-on" id="mp-intro">
+                                    <h2>Introduzione al Vampirismo</h2>
+                                    <p>Essere vampiro significa avere bisogni diversi, capacità diverse e un modo di vivere che richiede attenzione e disciplina costante. Non è facile, ma chi impara a conoscerlo scopre un mondo di opportunità che gli umani non possono neanche immaginare.</p>
+                                    <p>Il corpo di un vampiro è diverso da quello umano: guarisce più in fretta, i sensi sono più acuti e c’è una fame costante che non può essere ignorata. Ogni ferita va trattata, ogni periodo senza nutrimento può diventare un problema serio. La sopravvivenza richiede controllo: chi non lo ha finisce per diventare pericoloso per sé stesso e per chi gli sta intorno.</p>
+                                    <p>Non tutti i vampiri sono uguali. I neonati sono inesperti, guidati dalla sete e dall’impulsività, e devono imparare rapidamente a gestire le proprie capacità. Gli adulti sanno come muoversi tra gli umani senza farsi notare, come gestire la propria fame e come pianificare ogni passo. Gli anziani hanno vissuto per decenni o secoli: conoscono le regole del mondo e sanno come far funzionare tutto a loro favore, ma sanno anche che l’esperienza porta cautela, perché chi si fa troppo sicuro rischia di cadere.</p>
+                                    <p>Questo manuale è una guida pratica: un insieme di osservazioni, consigli e regole non scritte che ogni vampiro conosce. Serve a capire come funziona il proprio corpo, come gestire la sete, come rigenerarsi, come proteggersi e come convivere con gli altri senza attirare problemi.</p>
+                                    <p>Il vampirismo è una vita diversa, impegnativa e, se presa sul serio, potente e chi impara a viverlo nel modo giusto scopre che il vero potere non sta nel terrore o nella forza bruta, ma nella disciplina e nella consapevolezza di sé.</p>
+                                </article>
+
+                                <article class="manuale-page" id="mp-sommario">
+                                    <h2>Sommario</h2>
+                                    <ul class="manuale-toc">
+                                        <li><button type="button" data-goto="cap1"><strong>Capitolo I</strong> Anatomia, Natura e Poteri del Vampiro <span>4</span></button></li>
+                                        <li><button type="button" data-goto="cap2"><strong>Capitolo II</strong> Neonato, Adulto e Mentore <span>7</span></button></li>
+                                        <li><button type="button" data-goto="cap3"><strong>Capitolo III</strong> Morso e gestione del tale <span>11</span></button></li>
+                                    </ul>
+                                </article>
+
+                                <article class="manuale-page" id="mp-cap1">
+                                    <h2>Capitolo I — Anatomia, Natura e Poteri del Vampiro</h2>
+                                    <p>Il vampiro è un essere che appare come un comune essere umano, ma la sua fisiologia e il suo comportamento rivelano differenze profonde. È una condizione reale, concreta, che influenza ogni aspetto della vita. Comprendere il corpo, la mente e le capacità di un vampiro è essenziale per chi desidera conoscere la stirpe e interagire con essa in modo efficace.</p>
+                                    <h3>1. Anatomia e Fisiologia</h3>
+                                    <p>Il corpo di un vampiro mantiene le proporzioni e la struttura di un umano, ma alcune caratteristiche lo distinguono:</p>
+                                    <ul>
+                                        <li><strong>Resistenza e forza:</strong> I muscoli di un vampiro reagiscono più rapidamente allo sforzo e recuperano più velocemente dalla fatica. Questo non significa che possano sollevare montagne, ma che una corsa prolungata, uno scontro fisico o attività intense vengono sostenute più a lungo rispetto a un corpo umano.</li>
+                                        <li><strong>Metabolismo e nutrimento:</strong> Il sangue, normalmente proveniente dagli esseri umani, animali o altre creature, serve a mantenere le funzioni corporee ottimali. Un vampiro può sopravvivere anche senza nutrimento per un certo periodo, ma a lungo andare soffre cali di energia, concentrazione e velocità di guarigione. La fame influisce sul comportamento: un vampiro affamato diventa più impulsivo, meno attento e più vulnerabile agli errori.</li>
+                                        <li><strong>Durata della vita:</strong> I vampiri sono eterni nel senso che il loro corpo non mostra segni di invecchiamento come quello umano. Non sono immortali: possono morire per condizioni estreme. Tuttavia, il passare degli anni non li indebolisce in modo naturale.</li>
+                                    </ul>
+                                    <h3>Caratteristiche — Neonato / Adulto / Mentori</h3>
+                                    <div class="manuale-grid">
+                                        <div class="manuale-box"><h4>Rigenerazione</h4>
+                                            <p><strong>Neonato:</strong> 3gg (in base al tipo di ferita e all’assunzione di sangue umano, ecc.)</p>
+                                            <p><strong>Adulto:</strong> 1gg e mezzo (in base al tipo di ferita e da chi è inferta, e al sangue umano)</p>
+                                            <p><strong>Mentori:</strong> poche ore (in base al tipo di ferita e al sangue umano)</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Sole</h4>
+                                            <p><strong>Neonato:</strong> anche pochi istanti rendono debole, affaticato e irritato. Senza coperture, diverse ore possono danneggiare severamente.</p>
+                                            <p><strong>Adulto:</strong> più irascibile sotto esposizioni prolungate; diverse ore possono danneggiare severamente.</p>
+                                            <p><strong>Mentori:</strong> completamente abituati alla lunga esposizione ai raggi solari.</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Fuoco</h4>
+                                            <p><strong>Neonato / Adulto:</strong> rallenta l’autorigenerazione delle ferite. Evitare il fuoco, non attirare l’attenzione su di sé.</p>
+                                            <p><strong>Mentori:</strong> nessun effetto.</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Frenesia</h4>
+                                            <p><strong>Neonato:</strong> controllo INSTABILE. Rabbia, fame, paura, dolore possono scatenarla facilmente. Soluzioni: evitare provocazioni; nutrirsi di sangue umano o di un mentore.</p>
+                                            <p><strong>Adulto / Mentori:</strong> nessun effetto.</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Ombra Interiore</h4>
+                                            <p><strong>Adulto:</strong> conosce meglio la propria Ombra, ma a volte si illude di dominarla. Disciplina e, se serve, sangue di umano, adulto, mentore o originario.</p>
+                                            <p><strong>Mentori:</strong> la padroneggiano alla perfezione. Solo in stress emotivo estremo può servire sangue di umano, adulto, mentore o originario.</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Vincolo di Sangue</h4>
+                                            <p><strong>Adulti e Mentori:</strong> possono creare patti e legare servitori e/o progenie con il proprio sangue, purché consenziente da ambo le parti. Scegliere con cura: si crea un legame quasi indissolubile.</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Abbraccio</h4>
+                                            <p><strong>Mentori:</strong> possibilità di creare progenia qualora si sentissero pronti.</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Tagli e amputazioni</h4>
+                                            <p><strong>Neonato:</strong> ferite gravi difficili da guarire. Rigenerazione lenta; evitare combattimenti diretti.</p>
+                                            <p><strong>Adulto:</strong> più rapida ma resta pericolosa; richiede ingenti risorse di sangue e tempo.</p>
+                                            <p><strong>Mentori:</strong> molto più rapida, ma richiede comunque attenzione e sangue.</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Immunità e tossine</h4>
+                                            <p>Il sistema immunitario vampirico rigetta gli agenti patogeni biologici standard. Le tossine assunte attraverso il flusso sanguigno delle vittime sono inefficaci (Neonato, Adulto e Mentori).</p>
+                                        </div>
+                                        <div class="manuale-box"><h4>Masquerade</h4>
+                                            <p><strong>Neonato:</strong> OBBLIGATO a nascondere la vera identità. Se viene meno, sarà punito (reclusione obbligatoria, cambio totale dei connotati, cambiamento del gruppo e delle abitudini momentaneo).</p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="manuale-page" id="mp-cap1b">
+                                    <h2>2. Sensi e percezioni</h2>
+                                    <p>I sensi di un vampiro sono più sviluppati di quelli umani, ma restano realistici e concreti:</p>
+                                    <ul>
+                                        <li><strong>Vista:</strong> percezione più nitida e dettagliata. Note movimenti lievi, differenze di luce o cambiamenti nell’ambiente. Vista in penombra o scarsa illuminazione superiore.</li>
+                                        <li><strong>Udito:</strong> maggiore precisione. Rumori lontani, sussurri, movimenti discreti. Un esperto distingue il battito del cuore, il flusso del sangue o il respiro accelerato della paura.</li>
+                                        <li><strong>Olfatto:</strong> dettagli che l’umano medio non percepisce: presenza di persone, cambiamenti ambientali, segnali corporei sottili.</li>
+                                        <li><strong>Percezione generale:</strong> maggiore attenzione ai dettagli e valutazione più accurata, ma richiede disciplina: un vampiro distratto o instabile può essere sopraffatto.</li>
+                                    </ul>
+                                    <h3>Allenamento dei neonati</h3>
+                                    <p>Nei neonati i sensi sono presenti fin dalla trasformazione, ma non ancora pienamente controllati. L’udito può essere sopraffatto, l’olfatto reagisce a troppe stimolazioni, la vista distrae con dettagli irrilevanti. Questo li rende vulnerabili agli errori e più impulsivi.</p>
+                                    <p>Per padroneggiarli servono esercizio e disciplina: osservare senza reagire immediatamente, filtrare le informazioni rilevanti, riconoscere i segnali delle emozioni altrui, gestire fame e stress mentre si percepisce l’ambiente. Solo con tempo e pratica i sensi diventano strumenti efficaci.</p>
+                                    <h3>3. Emozioni e psicologia</h3>
+                                    <p>Le emozioni non sono diverse per natura da quelle umane, ma si percepiscono con maggiore intensità e chiarezza. Ogni sentimento — gioia, rabbia, paura, desiderio — arriva più vivido e diretto, influenzando corpo e mente. Ogni esperienza emotiva pesa di più e richiede consapevolezza.</p>
+                                    <ul>
+                                        <li><strong>Neonati:</strong> emozioni più grezze e difficili da controllare; possono apparire sproporzionate. Più impulsivi e suscettibili agli errori. La disciplina emotiva si impara lentamente.</li>
+                                        <li><strong>Adulti:</strong> intense ma regolate. Sanno quando e come reagire; rabbia, paura o desiderio vengono modulati.</li>
+                                        <li><strong>Mentori:</strong> stessa intensità, pieno controllo. Reagiscono in modo calcolato anche in situazioni complesse; usano le percezioni come strumenti per relazioni, alleanze e osservazione.</li>
+                                    </ul>
+                                    <h3>Sintesi</h3>
+                                    <p>Un vampiro è consapevole della propria natura: corpo resistente, sensi affinati ed emozioni intense. La differenza tra neonato e Mentore non sta solo nell’esperienza, ma nella capacità di controllare mente, corpo e percezioni. Disciplina e controllo separano i neofiti dai maestri della stirpe.</p>
+                                </article>
+
+                                <article class="manuale-page" id="mp-cap2">
+                                    <h2>Capitolo II — Neonato</h2>
+                                    <p>Vi è un momento, nel passaggio dalla vita alla nuova condizione, in cui l’individuo cessa di essere ciò che era senza essere ancora ciò che diventerà. Questo stato intermedio prende forma nel neonato.</p>
+                                    <p>Il neonato non è ancora una creatura compiuta. È instabile, incompleto, esposto a impulsi che non riconosce e che, soprattutto, non sa ancora governare.</p>
+                                    <h3>Della Fame</h3>
+                                    <p>La fame è la prima e più pressante realtà del neonato. Non si manifesta come un semplice bisogno, ma come una presenza costante, capace di insinuarsi in ogni pensiero. Essa non urla sempre, ma non tace mai.</p>
+                                    <p>A differenza dei longevi, il neonato non possiede gli strumenti per contenerla. La richiesta di sangue diventa una prova difficile: il bisogno può superare la misura, incrinare la lucidità, spingerlo oltre ciò che sarebbe appropriato. È in questi momenti che il controllo può venire meno — non per scelta, né per indole, ma per inesperienza.</p>
+                                    <h3>Dei Sensi</h3>
+                                    <p>Nel nuovo stato i sensi si affinano. Il mondo si presenta con maggiore definizione: suoni, odori, dettagli emergono con chiarezza nuova. Tuttavia questa apertura non è ancora ordinata. Il neonato non sa filtrare: ciò che percepisce può sovraccaricarlo, distrarlo, confonderlo. L’eccesso di stimoli rende più fragile l’equilibrio, specialmente quando la fame si fa intensa.</p>
+                                    <h3>Delle Emozioni</h3>
+                                    <p>Le emozioni si amplificano in modo evidente. Ogni reazione si fa più marcata, più difficile da contenere. Il neonato non è privo di controllo, ma il suo controllo è instabile: può mantenerlo per un tempo e perderlo subito dopo.</p>
+                                    <h3>Del Corpo e del Cambiamento</h3>
+                                    <p>Il corpo non è ancora familiare. Tensioni e disagi — tra cui il dolore dei canini nei momenti di maggiore fame o agitazione — rendono più difficile la concentrazione e più fragile la calma. Ogni gesto richiede adattamento.</p>
+                                    <h3>Degli Adulti e dei Mentori</h3>
+                                    <p>Gli Adulti possono rappresentare un riferimento per disciplina e convivenza vampirica; i Mentori costituiscono un punto di stabilità superiore. Il sangue di un Mentore possiede proprietà calmanti che attenuano rapidamente fame e agitazione. Attraverso presenza e insegnamento il Neonato apprende a riconoscere i propri limiti e a non oltrepassarli.</p>
+                                    <h3>Del Comportamento</h3>
+                                    <p>La nuova condizione impone disciplina, ma il neonato non ne è ancora padrone. Osserva e tenta di adattarsi, ma l’errore è frequente: può risultare incerto, inappropriato, talvolta eccessivo — non per volontà, ma per mancanza di esperienza. Il rispetto delle regole, e in particolare del consenso, rimane imprescindibile.</p>
+                                    <h3>Conclusione</h3>
+                                    <p>Il neonato è una creatura in formazione, attraversata da forze che non comprende e che non sempre riesce a contenere. Non è la perfezione a definirlo, ma il suo tentativo di raggiungerla. Ogni perdita di controllo, ogni errore, ogni intervento degli anziani costituisce parte del percorso. Fino ad allora resta ciò che è: un essere nuovo, fragile nel proprio potere.</p>
+                                </article>
+
+                                <article class="manuale-page" id="mp-cap2b">
+                                    <h2>Capitolo II — Adulto</h2>
+                                    <p>Vi è un momento, dopo la fase del neonato, in cui l’individuo ha appreso a conoscere se stesso e a gestire le proprie capacità. Questo stadio prende forma nell’adulto. L’adulto non è più dominato dagli impulsi primordiali; possiede disciplina, esperienza e controllo.</p>
+                                    <h3>Della Fame</h3>
+                                    <p>La fame è ancora presente, ma non più opprimente. L’adulto sa riconoscerla e anticiparla. Ogni atto di nutrirsi diventa misura e strategia: conoscere i propri limiti, valutare le circostanze, scegliere con attenzione quando e come soddisfare il bisogno. La lucidità resta intatta. La fame è gestita, non subita.</p>
+                                    <h3>Dei Sensi</h3>
+                                    <p>I sensi dell’adulto sono affinati e disciplinati. La vista distingue dettagli utili senza distrarre, l’udito percepisce rumori e battiti significativi, l’olfatto coglie le emozioni senza confondere. Ogni percezione è filtrata, selezionata e usata come strumento concreto.</p>
+                                    <h3>Delle Emozioni</h3>
+                                    <p>Le emozioni restano intense, ma non più incontrollate. Rabbia, paura, gioia o desiderio sono sempre presenti, ma modulati. L’adulto sa quando lasciarsi guidare dall’impulso e quando trattenersi. Le emozioni diventano strumenti di osservazione e giudizio.</p>
+                                    <h3>Del Corpo e del Comportamento</h3>
+                                    <p>Il corpo è padroneggiato e ogni movimento è calibrato. Forza e resistenza usate con giudizio; gesti precisi e ponderati. Il comportamento quotidiano si regge su disciplina e misura. Ogni azione è scelta consapevolmente.</p>
+                                </article>
+
+                                <article class="manuale-page" id="mp-cap2c">
+                                    <h2>Capitolo II — Mentore</h2>
+                                    <p>Il mentore rappresenta il culmine della conoscenza di sé e del controllo. In questo stadio il vampiro ha imparato a dominare mente, corpo ed emozioni, e usa ogni capacità con precisione e strategia.</p>
+                                    <h3>Della Fame</h3>
+                                    <p>La fame non è più un problema né un limite. Il mentore può resistere a lunghi periodi senza nutrirsi senza perdere lucidità o equilibrio. Quando decide di nutrirsi, lo fa con scelta, misura e attenzione. La fame è uno strumento, mai un ostacolo.</p>
+                                    <h3>Dei Sensi</h3>
+                                    <p>I sensi sono perfettamente dominati. Il mentore percepisce ciò che è utile e ignora ciò che è superfluo. Rumori, odori, segnali e dettagli vengono raccolti e interpretati con precisione, senza sovraccaricare la mente.</p>
+                                    <h3>Delle Emozioni</h3>
+                                    <p>Le emozioni restano vive e intense, ma sono controllate in ogni momento. Non interferiscono con il giudizio. Il mentore usa ogni sentimento come strumento di osservazione, strategia e comprensione degli altri.</p>
+                                    <h3>Del Corpo e del Comportamento</h3>
+                                    <p>Il corpo è completamente padroneggiato. Forza, resistenza e coordinazione usate con precisione assoluta. Ogni gesto, movimento o scelta è ponderato. La sua presenza è guida ed esempio per tutti i più giovani della stirpe.</p>
+                                    <h3>Dell’Abbraccio</h3>
+                                    <p>Il Mentore acquisisce la possibilità di generare una propria progenie attraverso l’Abbraccio. Tale possibilità non deve essere considerata un privilegio da esercitare con leggerezza. La creazione di un nuovo vampiro comporta responsabilità, preparazione e consapevolezza delle conseguenze che ne derivano.</p>
+                                </article>
+
+                                <article class="manuale-page" id="mp-cap3">
+                                    <h2>Capitolo III — Morso e gestione del tale</h2>
+                                    <p class="manuale-note">Appunti per la comprensione degli effetti, dei limiti e delle forme del morso</p>
+                                    <p>Il morso rappresenta uno degli atti più caratteristici della vita del vampiro. Non è soltanto un mezzo di nutrimento, ma un gesto che coinvolge il corpo, la mente e il rapporto con l’altro. Comprenderne gli effetti e rispettarne i limiti è fondamentale per garantire sicurezza, stabilità e convivenza.</p>
+                                    <p>All’inizio viene spesso percepito come una sensazione intensa: pressione fredda sulla pelle, seguita da un bruciore lieve o da un improvviso senso di calore. Molti descrivono l’esperienza come stranamente piacevole o rilassante, quasi come se il corpo entrasse in uno stato di calma profonda. Questa sensazione può ridurre la tensione e rallentare i pensieri. Tuttavia questa condizione non dura per sempre.</p>
+                                    <h3>Degli Effetti sul Corpo Umano</h3>
+                                    <p>Dopo il morso l’organismo umano si indebolisce. Perdita di sangue e influenza del sangue vampirico provocano stanchezza, pallore e riduzione delle energie. In alcuni casi vertigini o difficoltà a concentrarsi, soprattutto se il nutrimento è stato intenso o prolungato. Il recupero richiede tempo.</p>
+                                    <p>Uno degli effetti più particolari è la <strong>dipendenza</strong>. Il sangue del vampiro agisce in modo simile a una sostanza stimolante: benessere temporaneo, poi desiderio crescente di rivivere l’esperienza. Non è necessariamente debolezza morale, ma una reazione fisica e psicologica naturale. Serve disciplina, sia da parte del vampiro sia da parte dell’umano.</p>
+                                    <h3>Del Tempo di Recupero</h3>
+                                    <p>Regola fondamentale: tra un morso e l’altro devono passare <strong>almeno venti o ventiquattro ore</strong>.</p>
+                                    <p>Quando i morsi sono troppo ravvicinati può verificarsi la <strong>saturazione</strong>, simile a un’overdose. Segnali comuni: tremori, sudorazione fredda, confusione mentale, debolezza improvvisa, perdita di coscienza.</p>
+                                    <p>Il limite più pericoloso sono i <strong>tre morsi nell’arco di ventiquattro ore</strong>. Superata questa soglia il rischio di svenire diventa concreto, soprattutto se la persona è già debole, malata o ferita. Il corpo potrebbe non avere più energia sufficiente e potrebbe incorrere alla morte.</p>
+                                    <h3>Della Donazione di Sangue Senza Morso</h3>
+                                    <p>Modalità alternativa quando il corpo ha già subito un prelievo recente ma desidera comunque offrire sangue: taglio controllato (di solito al polso); il vampiro beve senza affondare i canini. Riduce lo stress del morso se non sono ancora trascorse le ventiquattro ore. La responsabilità resta condivisa tra chi dona e chi riceve.</p>
+                                </article>
+
+                                <article class="manuale-page" id="mp-cap3b">
+                                    <h2>Morso tra Vampiri e tipi di morso</h2>
+                                    <p>Le regole su tempo di recupero e numero di morsi si applicano principalmente agli esseri umani. Tra vampiri queste limitazioni non sono necessarie: l’organismo gestisce morso e perdita di sangue in modo molto più efficiente. Due vampiri possono mordersi più volte nello stesso periodo senza saturazione tipica dell’uomo.</p>
+                                    <h3>Effetto del sangue tra vampiri</h3>
+                                    <div class="manuale-grid">
+                                        <div class="manuale-box"><h4>Ekaton</h4><p>Calma istantaneamente qualsiasi voglia di nutrirsi e qualsiasi stato di agitazione.</p><p><em>Durata: molto prolungata</em></p></div>
+                                        <div class="manuale-box"><h4>Mentore</h4><p>Calma in modo rapido sete e agitazione.</p><p><em>Durata: prolungata</em></p></div>
+                                        <div class="manuale-box"><h4>Adulto</h4><p>Calma lentamente sete e agitazione.</p><p><em>Durata: breve</em></p></div>
+                                    </div>
+                                    <h3>Non tutti i morsi sono uguali</h3>
+                                    <p><strong>1. Il Morso di Nutrimento</strong> — Il più comune e necessario alla sopravvivenza. Si preleva solo la quantità necessaria, evitando danni permanenti. Misura e controllo sono fondamentali: nutrirsi non significa consumare, ma mantenere equilibrio. Un vampiro disciplinato interrompe il morso prima del limite di sicurezza.</p>
+                                    <p><strong>2. Il Morso di Trasformazione</strong> — Non ha come scopo il nutrimento, ma il cambiamento della natura della vittima. Avviene in condizioni specifiche e non può essere improvvisato. Processo complesso, spesso accompagnato da grande perdita di sangue e dalla morte del corpo umano, seguita da una rinascita. È uno degli atti più seri e irreversibili. Richiede responsabilità, consapevolezza e preparazione. Non è un gesto da compiere con leggerezza.</p>
+                                    <p><strong>3. Il Morso Sessuale</strong> — Non ha come scopo principale nutrimento o trasformazione, ma piacere, legame e intimità. Quantità di sangue minima e attentamente controllata. L’effetto principale è una risposta emotiva e sensoriale intensa (euforia, rilassamento, forte connessione).</p>
+                                    <p>Tra vampiri questo tipo di morso assume una funzione particolare: poiché alcune funzioni corporee risultano ridotte o inattive, può contribuire a riattivare le parti intime, stimolando la circolazione e favorendo la risposta fisica necessaria all’intimità. In questo contesto il morso diventa parte integrante del contatto e della relazione.</p>
+                                    <p>Nonostante sia meno pericoloso degli altri, non è privo di rischi. Se ripetuto troppo frequentemente o combinato con morsi di nutrimento, può comunque portare a saturazione nel corpo umano.</p>
+                                    <p class="manuale-end">— Fine del Volume I —</p>
+                                </article>
+
+                            </div>
+                        </div>
+
+                        <div class="manuale-vol-pane" id="manuale-v2">
+                            <div class="manuale-wip">
+                                <div class="manuale-wip-icon">🦇</div>
+                                <h2>Work in Progress</h2>
+                                <p class="manuale-wip-main">LE ARPIE CI STANNO LAVORANDO!</p>
+                                <p>Il Volume II è ancora in preparazione nei recessi del Santuario.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
